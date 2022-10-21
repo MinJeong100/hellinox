@@ -357,10 +357,9 @@ a {text-decoration: none; color: #333;}
 .collabo .collabo-wrap .content .img-wrap img {
     width: 100%;
 }
-.collabo .collabo-wrap .content:nth-child(1) .img-wrap::after {
+.collabo .collabo-wrap .content .img-wrap::after {
     content: "";
     position: absolute;
-    background: url("../images/collabo-bts.png") no-repeat center center;
     width: 100%;
     height: 100%;
     left: 50%;
@@ -369,17 +368,11 @@ a {text-decoration: none; color: #333;}
     opacity: 0;
     transition: 0.6s;
 }
+.collabo .collabo-wrap .content:nth-child(1) .img-wrap::after {
+    background: url("../images/collabo-bts.png") no-repeat center center;
+}
 .collabo .collabo-wrap .content:nth-child(2) .img-wrap::after {
-    content: "";
-    position: absolute;
     background: url("../images/collabo-carhartt.png") no-repeat center center;
-    width: 100%;
-    height: 100%;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%, 0%);
-    opacity: 0;
-    transition: 0.6s;
 }
 .collabo .collabo-wrap .content .img-wrap:hover::after {
     opacity: 1;
@@ -556,7 +549,8 @@ a {text-decoration: none; color: #333;}
 }
 .lookbook .img-area {
     flex-basis: 50%;
-    background: url("../images/lookbook-bg.jpg") no-repeat right 20% fixed;
+    background: url("../images/lookbook-bg.jpg") no-repeat right 20%;
+    background-attachment: fixed;
     background-size: 50%;
 }
 
@@ -824,8 +818,9 @@ a {text-decoration: none; color: #333;}
     }
     .lookbook .img-area {
         flex-basis: 100%;
-        background-size: cover;
+        background-size: 100%;
         height: 400px;
+        background-attachment: scroll;
     }
     .treg .treg-wrap {
         margin-top: 100px;
@@ -944,6 +939,12 @@ a {text-decoration: none; color: #333;}
     .collabo .collabo-wrap .content {
         flex-basis: 100%;
     }
+    .collabo .collabo-wrap .content .img-wrap::after {
+        display: none;
+    }
+    .collabo .collabo-wrap .content .img-wrap:hover::after {
+        display: none;
+    }
     .collabo .collabo-wrap .content:nth-child(1) p {
         margin-bottom: 50px;
     }
@@ -960,6 +961,7 @@ a {text-decoration: none; color: #333;}
     .swiper-button-next {
     width: 45px;
     height: 45px;
+    top: 35%;
     }
     .flow-text {
         font-size: 50px;
@@ -990,7 +992,7 @@ a {text-decoration: none; color: #333;}
         font-size: 20px;
     }
     .event .event-btn {
-        padding: 20px 39%;
+        width: 100%;
         text-align: center;
     }
     .go-top {
