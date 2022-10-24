@@ -142,8 +142,8 @@ $("document").ready(function () {
         slidesOffsetBefore: 200,
         breakpoints: {
             1400:{spaceBetween: 30,slidesPerView: 5},
-            1024:{spaceBetween: 20,slidesPerView: 3, slidesOffsetBefore: 100},
-            360:{spaceBetween: 20, slidesPerView: 3, slidesOffsetBefore: 50, slidesOffsetAfter: 100},
+            1024:{spaceBetween: 20,slidesPerView: 3, slidesOffsetBefore: 0},
+            360:{spaceBetween: 20, slidesPerView: 3, slidesOffsetBefore: 0, slidesOffsetAfter: 100},
         }
     });
 

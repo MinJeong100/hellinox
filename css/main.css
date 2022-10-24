@@ -959,6 +959,12 @@ video::-webkit-media-controls-play-button {
     .best .tit h2 {
         font-size: 28px;
     }
+    .best .tit p {
+        font-size: 14px;
+    }
+    .best .best-swiper {
+        margin-right: -74px;
+    }
     .best .best-swiper .swiper-slide p {
         font-size: 12px;
     }
@@ -986,6 +992,9 @@ video::-webkit-media-controls-play-button {
     }
     .treg .treg-wrap {
         padding-left: 20px;
+    }
+    .treg .treg-swiper {
+        margin-right: -74px;
     }
     .treg .tit h2 {
         font-size: 28px;
